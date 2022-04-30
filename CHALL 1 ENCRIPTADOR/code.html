@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet"  href="style.css">
+
+    <title>Primer Challenge Alura CS</title>
+</head>
+<body>
+    
+<h1>Código Secreto</h1>
+ 
+    
+       <label for="input-texto"><h3>Ingrese texto  (solo letras minusculas, sin acento ni caracteres especiales.)</h3></label> </b></font>
+       <br>
+       <section class="primer-caja">
+            <textarea id="entrada_texto" name="textarea"   onchange="this.value=this.value.toLowerCase();"> </textarea>
+            <br>
+            <button class="boton_izquierdo" onclick="btnEncriptado()">Encriptar</button>
+            <button class="boton_derecho" onclick="btnDesencriptado()">Desencriptar!</button>
+        </section>
+            
+    <br>
+        <div class="form-desencriptar">
+            <label for="output-texto"><h2 id="desencriptar_texto">Mensaje encriptado</h2></label>
+<section class="segunda-caja">
+            <textarea id="salida_texto" name="textarea"  onchange="this.value=this.value.toLowerCase();"></textarea>
+        <br>
+
+         <button class="boton_izquierdo" onclick="btnCopiar()">Copiar</button>
+</section>
+    </div>
+    <footer>
+        <p class="footer"> Desarrollado por Jazmín Castrejón</p>
+    </footer>
+
+    <script src="code.js"></script>
+</body>
+</html>
